@@ -286,7 +286,9 @@
                     }
 
                     fieldArr.push({
-                        fieldInput: $(this).find('.txtFieldName').val() + ':' + $(this).find('.txtdbType').val(),
+                         name: $(this).find('.txtFieldName').val() ,
+                        dbType: $(this).find('.txtFieldName').val() + ':' + $(this).find('.txtdbType').val(),
+                      //  fieldInput: $(this).find('.txtFieldName').val() + ':' + $(this).find('.txtdbType').val(),
                         htmlType: htmlValue,
                         validations: $(this).find('.txtValidation').val(),
                         searchable: $(this).find('.chkSearchable').prop('checked'),
